@@ -1,0 +1,17 @@
+@import "@deboxsoft/svelte-themes/primer/base.css";
+@import "tailwindcss/base.css";
+@import "/src/app.css";
+/*@import "@deboxsoft/svelte-themes/primer/themes/light.css";*/
+@import "@deboxsoft/svelte-markdown/github-theme.css";
+@import "@deboxsoft/svelte-components/styles/base.css";
+@import "highlight.js/styles/hybrid.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
