@@ -49,7 +49,7 @@
 		"@deboxsoft/svelte-core": "^1.1.9",
 		"@deboxsoft/svelte-datepicker": "^1.0.35",
 		"@deboxsoft/svelte-form": "^1.1.0-beta.34",
-		"@deboxsoft/svelte-markdown": "^0.0.13",
+		"@deboxsoft/svelte-markdown": "^0.0.14",
 		"@deboxsoft/svelte-themes": "^1.1.0-beta.114",
 		"@fastify/vite": "^3.0.8",
 		"@popperjs/core": "^2.11.6",

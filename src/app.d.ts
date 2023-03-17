@@ -3,7 +3,7 @@
 declare global {
 	namespace App {
 		interface locals{
-			 user :any
+			 user :never
 		}
 		// interface Error {}
 		// interface Locals {}

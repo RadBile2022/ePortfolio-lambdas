@@ -183,7 +183,6 @@
                             <h2 class="text-3xl font-bold px-6 pt-6">Posts</h2>
                             {#each posts as post, i}
                                 {#if i < 3}
-                                    <p>{JSON.stringify(post)}</p>
                                     <PostCardDiscovery {post} userId="{userIdLocal}"/>
                                     <hr class="h-1 bg-gray-300" />
                                 {/if}

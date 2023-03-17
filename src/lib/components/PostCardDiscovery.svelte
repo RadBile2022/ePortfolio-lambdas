@@ -147,7 +147,7 @@
   <div class="md:container md:mx-auto bg-gray-100 p-6">
     <div class=" mb-4">
       <a
-              href={userId == userIdPost ? "/profile" : "/profile/" + userIdPost}
+              href={userId == userIdPost ? "/profile" :  "/" + userIdPost +"/profile"}
               class="flex"
       >
         <div class="">

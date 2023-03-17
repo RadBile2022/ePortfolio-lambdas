@@ -15,6 +15,8 @@ export const actions = {
 
         const email = data.get('email');
         const password = data.get('password');
+
+
         const user = await fetch(api_url + "/api/auth/login", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
@@ -35,7 +37,6 @@ export const actions = {
         cookies.set('token', value,{secure:!dev});
         throw redirect(302,'/home');
 
-
         // @ts-ignore
         return {
             success : true,
@@ -43,7 +44,7 @@ export const actions = {
         }
 
 
-    }
+    },
 
 
 

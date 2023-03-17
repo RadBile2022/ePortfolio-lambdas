@@ -6,10 +6,12 @@
     export let data;
      let indexBlock = data.params.index;
     let userId= data.user.userId;
-    let userData,
+    let userData ,
         title = "",
         desc,
         blocks = [];
+
+    console.log(userData)
 
     // get data user
     async function getUser() {
@@ -27,11 +29,13 @@
 
         const data = await response.json();
         userData = data;
+
+        console.log(userData)
         blocks = userData.blockProfile;
         title = blocks[indexBlock].title;
         desc = blocks[indexBlock].desc;
     }
-        getUser();
+    getUser();
 
     // update data user
     async function update(type) {
@@ -68,8 +72,9 @@
             document.location.href = "/profile";
         }
     }
-</script>
 
+
+</script>
 {#if userData}
     <section class="flex">
         <div class="py-8 mx-5 md:mx-10 w-full lg:py-8">
@@ -97,7 +102,7 @@
                             class="block mb-2 font-medium text-gray-900 dark:text-white"
                     >Description</label
                     >
-                    <MarkdownEditor bind:value="{desc}"/>
+                    <MarkdownEditor value="{desc}"/>
                     <!--          <textarea-->
                     <!--            bind:value={desc}-->
                     <!--            [id]="description"-->
